@@ -1,0 +1,14 @@
+prefix=/kaggle/working/workspace
+exec_prefix=${prefix}
+libdir=/kaggle/working/workspace/lib
+includedir=/kaggle/working/workspace/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 57.1.100
+Requires: libavutil >= 58.2.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lpostproc -lm -latomic
+Libs.private: 
+Cflags: -I${includedir}
