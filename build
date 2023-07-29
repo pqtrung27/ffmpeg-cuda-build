@@ -395,8 +395,8 @@ if command -v nvcc > /dev/null ; then
 fi
 
 build "ffmpeg"
-download "http://www.ffmpeg.org/releases/ffmpeg-6.0.tar.bz2" "ffmpeg-6.0.tar.bz2"
-cd "$PACKAGES"/ffmpeg-6.0/ || exit
+download "http://www.ffmpeg.org/releases/ffmpeg-5.0.1.tar.bz2" "ffmpeg-5.0.1.tar.bz2"
+cd "$PACKAGES"/ffmpeg-5.0.1/ || exit
 # shellcheck disable=SC2086
 ./configure $ADDITIONAL_CONFIGURE_OPTIONS \
     --pkgconfigdir="$WORKSPACE/lib/pkgconfig" \
